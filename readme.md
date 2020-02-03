@@ -10,7 +10,7 @@ The training and testing datasets can be downloaded from [Kaggle's competition w
 
 Note: The notebook assumes data files are stored in `./data/` directory.
 
-![alt text](sample.png)
+![alt text](sample.PNG)
 
 The final loss and accuracy score the model (conv5_model) managed to get after 100 epochs of learning
 
