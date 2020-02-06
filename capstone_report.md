@@ -46,13 +46,12 @@ As I Tested 3 different Models each with it's own different construction , I cal
 
 In all the models I tested I used categorical cross entropy as a loss function, it goes like this
 
-![alt text](categorical_crossentropy.png)
+![alt text](visuals/categorical_crossentropy.png)
 
 As here we have a classification problem, there is only one single label is applicable for each data point(image)
 
 
 ## II. Analysis
-_(approx. 2-4 pages)_
 
 ### Data Exploration
 As we discussed Earlier, our dataset consists of gray-scale images with resolution 48*48 pixels that are classified in  these categories
@@ -74,7 +73,7 @@ As we discussed Earlier, our dataset consists of gray-scale images with resoluti
 
 ### Exploratory Visualization
 
-![alt text](dataset.png)
+![alt text](visuals/dataset.png)
 
  as we see in the chart, the images are as follow
 
@@ -103,7 +102,7 @@ The proposed solution to this problem is to use a deep learning model that can e
 First I made a 18 layer CNN with maxpool and dropout of .25
 
 
-![alt text](conv18.png)
+![alt text](visuals/conv18.png)
 
 
 
@@ -111,13 +110,13 @@ I managed to get 60% validation accuracy from only 50 epochs
 
 I also  used th vgg16 pre-trained model, and surprisely I got worse results!
 
-![alt text](vgg.png)
+![alt text](visuals/vgg.png)
 
 
 
 Finally I tried a simple small CNN to see if it can do better, I thought that maybe If I had less parameters to train it could make it easier for the model to understand the data better
 
-![alt text](modelconv.png)
+![alt text](visuals/modelconv.png)
 
 
 ### Benchmark
@@ -152,21 +151,21 @@ I planned at first to use `pytorch`, but After I tried Keras I found it more eas
 First I made a 18 layer CNN with maxpool and dropout of .25
 and using this structure I got some good results
 
-![alt text](acc18.png)
-![alt text](loss18.png)
+![alt text](visuals/acc18.png)
+![alt text](visuals/loss18.png)
 
 I managed to get 60% validation accuracy from only 50 epochs
 I also  used th vgg16 pre-trained model, and surprisely I got worse results!
 I managed to only get 40% in the validation accuracy for 100 epochs
 
-![alt text](vggacc.png)
-![alt text](vggloss.png)
+![alt text](visuals/vggacc.png)
+![alt text](visuals/vggloss.png)
 
 Finally I tried a simple small CNN to see if it can do better, I thought that maybe If I had less parameters to train it could make it easier for the model to understand the data better
 I got 60% out of 100 epochs.
 
-![alt text](simpleconvacc.png)
-![alt text](simpleconvloss.png)
+![alt text](visuals/simpleconvacc.png)
+![alt text](visuals/simpleconvloss.png)
 
 ### Justification
 
